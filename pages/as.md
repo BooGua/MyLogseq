@@ -4,5 +4,5 @@ title: As
 
 ## 
 ---
-alias: bbb
+alias: bs, cs, ds
 ---
