@@ -2,4 +2,4 @@
 title: As
 ---
 
-## /alias:
+## /alias: bs, cs
