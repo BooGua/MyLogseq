@@ -2,3 +2,7 @@
 title: As
 ---
 
+## 
+---
+alias: bbb
+---
