@@ -3,6 +3,8 @@ title: As
 ---
 
 ## 
+#+BEGIN_EXAMPLE
 ---
-alias: bbb
+alias: page1, page2
 ---
+#+END_EXAMPLE
