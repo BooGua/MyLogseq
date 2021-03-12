@@ -2,4 +2,4 @@
 title: As
 ---
 
-## because
+## /alias:
