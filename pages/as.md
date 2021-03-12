@@ -2,4 +2,4 @@
 title: As
 ---
 
-## ## Because
+## Because
