@@ -27,5 +27,7 @@ title: BeeGFS 扩容思路（以单 meta 为例）
 #### 使用 `systemctl *.mount` 进行挂载。
 ### ~~DRBD 和 PCS 只在 mgmt 中进行，与扩容无关。~~
 ### 前面的步骤进行完后，目的是运行类似 `/opt/beegfs/sbin/beegfs-setup-meta -p /beegfs_meta/ -s 2 -m 192.168.194.147` 的代码。
-#### 新节点，添加一个 meta，需要获取
+#### 新节点，添加一个 meta，需要获取：
+##### 挂载点。`/beegfs_meta`.
+#####
 ## 如果不是新节点：
