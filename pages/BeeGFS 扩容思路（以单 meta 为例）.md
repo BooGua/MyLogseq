@@ -2,7 +2,7 @@
 title: BeeGFS 扩容思路（以单 meta 为例）
 ---
 
-## 检查是否为新节点，如果是新节点（相当于添加 node）：
+## 检查是否为新节点，如果是新节点（相当于添加 node）。将结果保存到 `isNewNode` 中。
 ### 进行 `precheck.sh`，包括（🔨 可能需要自己写。）：
 #### rpm: expect, bc.
 #### 配置文件是否存在：`hosts.conf`, `auto.conf`. （🔨 不确定扩容之后是否应该添加到这两个文件中。）=> 此处需要我们自己的配置文件 [[add_target.conf]].
@@ -36,4 +36,3 @@ title: BeeGFS 扩容思路（以单 meta 为例）
 ### systemctl enable meta 服务。判断状态，是否成功。
 ### 优化系统缓存设置，执行。
 ### 检查是否将一些启动写到了 `/etc/rc.d/rc.local` 中。如果未写入，则写入。
-## 如果不是新节点：
