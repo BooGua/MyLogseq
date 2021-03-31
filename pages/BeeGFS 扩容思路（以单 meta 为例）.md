@@ -36,3 +36,7 @@ title: BeeGFS 扩容思路（以单 meta 为例）
 ### systemctl enable meta 服务。判断状态，是否成功。
 ### 优化系统缓存设置，执行。
 ### 检查是否将一些启动写到了 `/etc/rc.d/rc.local` 中。如果未写入，则写入。
+### Te
+### test1
+### test2
+### test3
