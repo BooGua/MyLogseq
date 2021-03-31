@@ -1,5 +1,5 @@
 ---
-title: BeeGFS 扩容思路（以 meta 为例）
+title: BeeGFS 扩容思路（以单 meta 为例）
 ---
 
 ## 检查是否为新节点，如果是新节点（相当于添加 node）：
