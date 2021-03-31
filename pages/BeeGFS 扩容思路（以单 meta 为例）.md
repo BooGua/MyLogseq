@@ -17,6 +17,7 @@ title: BeeGFS 扩容思路（以单 meta 为例）
 #### 修改 `/etc/pafs/inst1.d/pafs-meta.conf` 配置文件，指定 log 位置，指定网卡配置。
 ### 初始化，执行 `/opt/beegfs/sbin/beegfs-setup-meta` 命令。
 ### systemctl enable meta 服务。判断状态，是否成功。
-##
+## 如果要添加一个 storage：
+###
 ## 优化系统缓存设置，执行。
 ## 检查是否将一些启动写到了 `/etc/rc.d/rc.local` 中。如果未写入，则写入。
