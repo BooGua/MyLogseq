@@ -19,6 +19,6 @@ title: BeeGFS 扩容思路（以单 meta 为例）
 ### 初始化，执行 `/opt/beegfs/sbin/beegfs-setup-meta` 命令。
 ### systemctl enable meta 服务。判断状态，是否成功。
 ## 如果要添加一个 storage：
-### 目的是运行类似`/opt/pafs/sbin/pafs-setup-meta -p /pafs/storage/ -s 2 -S `
+### 目的是运行类似`/opt/pafs/sbin/pafs-setup-meta -p /pafs/storage/ -s 2 -S storage2 `
 ## 优化系统缓存设置，执行。
 ## 检查是否将一些启动写到了 `/etc/rc.d/rc.local` 中。如果未写入，则写入。
