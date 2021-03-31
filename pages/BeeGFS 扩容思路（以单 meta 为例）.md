@@ -29,7 +29,7 @@ title: BeeGFS 扩容思路（以单 meta 为例）
 ### 前面的步骤进行完后，目的是运行类似 `/opt/beegfs/sbin/beegfs-setup-meta -p /beegfs_meta/ -s 2 -m 192.168.194.147` 的代码。
 #### 新节点，添加一个 meta，需要获取：
 ##### `-s` 后的 meta ID 号，该 ID 号应该与其他 meta 都不相同，应获得其他 meta 结点的 meta ID 号。
-##### `-S` 后的
+##### `-S` 后的说明字符串。
 ##### `-m` 后的 mgmt IP 地址为 “VIP”，你需要配置 hosts 文件使其生效。
 #### 修改 `/etc/pafs/inst1.d/pafs-meta.conf` 配置文件，指定 log 位置，指定网卡配置。
 ## 如果不是新节点：
