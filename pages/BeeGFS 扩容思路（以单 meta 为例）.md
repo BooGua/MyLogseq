@@ -7,7 +7,7 @@ title: BeeGFS 扩容思路（以单 meta 为例）
 #### {{embed [[扩容检查]]}}
 ### 如果是旧节点：
 #### 如果运行良好，不需要各种 check。
-#### 如果有问题，则退出。
+#### 如果各服务运行有问题，则退出。
 ## 前面的步骤进行完后，目的是运行类似 `/opt/beegfs/sbin/beegfs-setup-meta -p /beegfs_meta/ -s 2 -m 192.168.194.147` 的代码。
 ### 新节点，添加一个 meta，需要获取：
 #### `-s` 后的 meta ID 号，该 ID 号应该与其他 meta 都不相同，应获得其他 meta 结点的 meta ID 号。
