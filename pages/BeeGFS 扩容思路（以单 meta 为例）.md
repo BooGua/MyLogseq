@@ -8,6 +8,7 @@ title: BeeGFS 扩容思路（以单 meta 为例）
 ### 如果是旧节点：
 #### 如果运行良好，不需要各种 check。
 #### 如果各服务运行有问题，则退出。
+## 前面的步骤进行完后，目的是运行类似 `/opt/beegfs/sbin/beegfs-setup-meta -p /beegfs_meta/ -s 2 -m 192.168.194.147` 的代码。
 ## 如果要添加一个 meta：
 ### 你需要获取：
 #### `-s` 后的 meta ID 号，该 ID 号应该与其他 meta 都不相同，应获得其他 meta 结点的 meta ID 号。
@@ -16,7 +17,6 @@ title: BeeGFS 扩容思路（以单 meta 为例）
 #### 修改 `/etc/pafs/inst1.d/pafs-meta.conf` 配置文件，指定 log 位置，指定网卡配置。
 ### 初始化，执行 `/opt/beegfs/sbin/beegfs-setup-meta` 命令。
 ### systemctl enable meta 服务。判断状态，是否成功。
-## 前面的步骤进行完后，目的是运行类似 `/opt/beegfs/sbin/beegfs-setup-meta -p /beegfs_meta/ -s 2 -m 192.168.194.147` 的代码。
 ## 如果要添加一个 storage：
 ###
 ## 优化系统缓存设置，执行。
