@@ -38,5 +38,5 @@ title: BeeGFS 扩容思路（以单 meta 为例）
 ### 检查是否将一些启动写到了 `/etc/rc.d/rc.local` 中。如果未写入，则写入。
 ### Test
 ### test1
-#### test2
-##### test3
+### test2
+### test3
