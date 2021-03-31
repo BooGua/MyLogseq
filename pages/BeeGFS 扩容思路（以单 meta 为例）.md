@@ -15,7 +15,7 @@ title: BeeGFS 扩容思路（以单 meta 为例）
 #### `-s` 后的 meta ID 号，该 ID 号应该与其他 meta 都不相同，应获得其他 meta 结点的 meta ID 号。
 #### `-S` 后的说明字符串。
 #### `-m` 后的 mgmt IP 地址为 “VIP”，你需要配置 hosts 文件使其生效。
-#### 修改 `/etc/pafs/inst1.d/pafs-meta.conf` 配置文件，指定 log 位置，指定网卡配置。
+### 修改 `/etc/pafs/inst1.d/pafs-meta.conf` 配置文件，指定 log 位置，指定网卡配置。
 ### 初始化，执行 `/opt/beegfs/sbin/beegfs-setup-meta` 命令。
 ### systemctl enable meta 服务。判断状态，是否成功。
 ## 如果要添加一个 storage：
