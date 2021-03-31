@@ -10,7 +10,7 @@ title: BeeGFS 扩容思路（以单 meta 为例）
 #### 如果各服务运行有问题，则退出。
 ## 前面的步骤进行完后，机器的基本配置都有了，新节点也好旧节点也好都一样了。
 ## 如果要添加一个 meta：
-### 目的是运行类似 `/opt/beegfs/sbin/beegfs-setup-meta -p /beegfs_meta/ -s 2 -m 192.168.194.147` 的代码。
+### 目的是运行类似 `/opt/beegfs/sbin/beegfs-setup-meta -p /beegfs_meta/ -s 2 -m VIP -f` 的代码。
 ### 你需要获取：
 #### `-s` 后的 meta ID 号，该 ID 号应该与其他 meta 都不相同，应获得其他 meta 结点的 meta ID 号。
 #### `-S` 后的说明字符串。
