@@ -22,6 +22,8 @@ title: BeeGFS 扩容思路（以单 meta 为例）
 ### 目的是运行类似`/opt/pafs/sbin/pafs-setup-meta -p /pafs/storage/ -s 2 -S storage2 -i 01 -m VIP -f` 的代码。
 ### 你需要获取：
 #### `-s`
+#### `-S`
+#### `-i`
 ####
 ## 优化系统缓存设置，执行。
 ## 检查是否将一些启动写到了 `/etc/rc.d/rc.local` 中。如果未写入，则写入。
