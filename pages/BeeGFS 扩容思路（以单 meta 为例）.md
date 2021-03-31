@@ -26,6 +26,7 @@ title: BeeGFS 扩容思路（以单 meta 为例）
 #### `-i`
 #### `-m`
 #### VIP
+### 修改 `/etc/pafs/inst1.d/pafs-meta.conf` 配置文件，指定 log 位置，指定网卡配置。
 ### 初始化，执行 `/opt/beegfs/sbin/beegfs-setup-storage` 命令。
 ### systemctl enable storage 服务。判断状态，是否成功。
 ## 优化系统缓存设置，执行。
