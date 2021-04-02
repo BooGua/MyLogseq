@@ -2,7 +2,7 @@
 title: BeeGFS 扩容思路（以单 meta 为例）
 ---
 
-## 检查是否为新节点，将结果保存到 `isNewNode` 中。
+## 检查是否为新节点，将结果保存到 `isNewNode` 中。⚡
 ### 如果是新节点 (`isNewNode == true`)，需要做一系列 check：
 #### {{embed [[扩容检查]]}}
 ### 如果是旧节点：
